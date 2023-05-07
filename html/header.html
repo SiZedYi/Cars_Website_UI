@@ -1,0 +1,37 @@
+    <script>
+        $(function(){
+            getCart('dropdown', '/html/orderDetail.html');
+            // hiển thị cart khi hover
+
+            $('.dropdown').hover(function() {
+                $('.dropdown-container').addClass('open');
+            },
+            function() {
+                $('.dropdown-container').removeClass('open');
+            });
+        });
+    </script>
+      <script type="text/javascript" src="../js/cart.js"></script>
+    <a href="/"><img src="../assets/imgs/logo/logo_removebg.png" class="logo" alt="logo"></a>
+        <div class="login-nav">
+            <a href="/html/login.html" >Đăng Nhập</a>|<a href="/html/login.html?register=true" >Đăng Ký</a>
+        </div>
+    <nav>
+        <ul>
+            <li><a href="/">TRANG CHỦ</a></li>
+            <li><a href="/html/newsCarDetail.html?brand=toyota">MẪU XE</a></li>
+            <li><a href="/html/productList.html">Ô TÔ CŨ</a></li>
+            <li><a href="/html/contact.html">LIÊN HỆ</a></li>
+            <li><a href="/html/sitemap.html">SITEMAP</a></li>
+            <li><a href="/html/about.html">VỀ CHÚNG TÔI</a></li>
+            <li class="dropdown" style="font-size: 23px; color:  #ddefbb">
+                <div class="cart-count"></div>
+                <i class="lni lni-key"></i>
+                <div class="dropdown-container">
+                    <div class="dropdown-list"></div>
+                    <div class="dropdown-total"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+

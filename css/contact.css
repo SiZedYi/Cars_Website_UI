@@ -1,0 +1,28 @@
+.contact-div {
+    margin-top: 160px;
+    margin-bottom: 160px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+}
+
+.contact-div label {
+    font-weight: bold;
+}
+
+.contact-div  input[type='text'] {
+    border-bottom: 1px #333 solid;
+    width: 425px;
+}
+
+.contact-div input:focus {
+    outline: none;
+}
+
+.contact-div textarea {
+    width: 425px;
+    border: 1px #333 solid;
+}
+
+.contact-div input[type='submit'] {
+    padding: 10px;
+}

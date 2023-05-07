@@ -1,0 +1,56 @@
+[
+    {
+        "name":"Toyota",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/toyota.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=toyota"
+    },
+    {
+        "name":"Honda",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/honda.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=honda"
+    },
+    {
+        "name":"Huyndai",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/hyundai.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=hyundai"
+    },
+    {
+        "name":"Kia",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/kia.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=kia"
+    },
+    {
+        "name":"Ford",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/ford.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=ford"
+    },
+    {
+        "name":"Mazda",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/mazda.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=mazda"
+    },
+    {
+        "name":"Mercedes-Benz",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/mercedes-benz.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=mercedes"
+    },
+    {
+        "name":"Lexus",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/lexus.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=lexus"
+    },
+    {
+        "name":"BMW",
+        "logo": "https://img1.oto.com.vn/Static/Images/logo/v3/bmw.png",
+        "img":"https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+        "link":"../html/productList.html?brand=bmw"
+    }
+]

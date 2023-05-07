@@ -1,0 +1,35 @@
+.order-detail-box {
+    margin: 120px auto;
+    padding: 30px;
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.order-detail-box label {
+    font-weight: bold;
+}
+
+.order-detail-box  input[type='text'] {
+    border-bottom: 1px #333 solid;
+    width: 425px;
+}
+
+.order-detail-box input:focus {
+    outline: none;
+}
+
+.order-detail-box textarea {
+    width: 425px;
+    border: 1px #333 solid;
+}
+
+.order-detail-box input[type='submit'] {
+    padding: 10px;
+}
+
+.order-detail-list {
+    max-height: 400px;
+    overflow: auto;
+}

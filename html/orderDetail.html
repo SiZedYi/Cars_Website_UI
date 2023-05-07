@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="stylesheet" href="../css/order.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+        <script src="../assets/jquery/jquery-3.6.3.js"></script>
+        <script src="../js/cart.js"></script>
+        <title>Chi Tiết Đơn Hàng</title>
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+            $("#footer").load("./footer.html");
+            getCart('order-detail','/')
+        })
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+
+    <div class="order-detail-box">
+        <h3 style="text-align: center;">ĐƠN HÀNG</h3>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-6 order-detail-left">
+                <form action=""  id="order-form">
+                    <div class="form-group">
+                        <label for="name">HỌ TÊN</label> <br>
+                        <input name="name" type="text" id="name" placeholder="VD: Nam"> <br>
+                        <span class="form-message"></span>
+                    </div><br><br>
+
+                    <div class="form-group">
+                        <label for="email">EMAIL</label> <br>
+                        <input name="email" type="text" id="email" placeholder="VD: diepvienkhongthay@gmail.com"> <br>
+                        <span class="form-message"></span>
+                    </div><br><br>
+
+                    <div class="form-group">
+                        <label for="phone">SỐ ĐIỆN THOẠI</label> <br>
+                        <input name="phone" type="text" id="phone" placeholder="VD: 0376231231"> <br>
+                        <span class="form-message"></span>
+                    </div>
+
+                    <br><label for="">TỈNH THÀNH</label><br>
+                    <select>
+                        <option value="">THÀNH PHỐ HÀ NỘI</option>
+                        <option value="">THÀNH PHỐ ĐÀ NẴNG</option>
+                        <option value="">THÀNH PHỐ HỒ CHÍ MINH</option>
+                    </select> <br><br>
+
+                    <div class="form-group">
+                        <label for="time">ĐẶT LỊCH HẸN</label><br>
+                        <input type="date" name="time" id="time">
+                        <span class="form-message"></span>
+                    </div><br>
+                    <input type="submit" value="ĐẶT LỊCH">
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="order-detail-right">
+                    <div class="order-detail-container">
+                        <div class="order-detail-list"></div>
+                        <div class="order-detail-total"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+</html>

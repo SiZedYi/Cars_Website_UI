@@ -1,0 +1,73 @@
+#news-car-detail {
+    margin-top: 100px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#news-car-detail li {
+   list-style: disc;
+}
+
+#news-car-detail img {
+    width: 100%;
+    height: auto;
+}
+
+#content-list-toc  {
+    width: 25%;
+    background: #e0dddd;
+    border-radius: 10px;
+    top:150px;
+    position:fixed;
+    margin-bottom: 20px;
+}
+
+#content-list-toc .content-list-header {
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    color: whitesmoke;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#content-list-toc li a {
+    margin-top: 8px;
+    text-decoration: none;
+    color: 	#333;
+    font-size: 17px;
+}
+
+#content-list-toc li a:hover {
+    color: #FF4136;
+}
+
+.other-car-navigate {
+    width: 25%;
+    background: #D3D3D3;
+    border-radius: 10px;
+    position:fixed;
+    bottom:20px;
+}
+
+.other-car-navigate .other-car-header {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.other-car-navigate a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: 	#333;
+    font-size: 17px;
+}
+
+.other-car-navigate a:hover {
+    color: #FF4136;
+}

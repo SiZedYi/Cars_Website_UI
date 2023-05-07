@@ -1,0 +1,132 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    position:fixed;
+    z-index: 999;
+    color: rgba(255, 255, 255, 0.595);
+    background-color: rgba(0, 0, 0, 0.7); /* Thiết lập màu nền với giá trị alpha = 0.5 */
+    backdrop-filter: blur(10px); /* Thiết lập hiệu ứng mờ nền */
+    webkit-backdrop-filter: blur(10px); /* Thiết lập hiệu ứng mờ nền cho trình duyệt Safari */
+}
+header .logo {
+    margin-left: 15px;
+    height: 100%;
+    display: flex;
+}
+header .logo:hover{
+    filter: opacity(70%);
+}
+header .login-nav{
+    position:absolute;
+    text-align: right;
+    height: 30px;
+    border-bottom: 1px rgba(255, 255, 255, 0.595) solid;
+    top: 10px;
+    right: 80px;
+    width: 75%;
+}
+header .login-nav a {
+    color: rgba(255, 255, 255, 0.595);
+    margin: 5px;
+}
+
+header .login-nav a:hover {
+    color: #fff;
+}
+header nav ul {
+    position: absolute ;
+    bottom: 5px;
+    right: 9%;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+    line-height: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    /* font-weight: bold; */
+}
+
+header nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.595);
+}
+
+/* Dropdown  */
+.cart-count {
+    position: absolute;
+    text-align: center;
+    border-radius: 20px;
+    top: -10px;
+    left: 22px;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    color: wheat;
+}
+
+.dropdown-container {
+    position: absolute;
+    color: black;
+    width: 550px;
+    font-size: 15px;
+    top: 101%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.dropdown-list {
+    max-height: 450px;
+    overflow: auto;
+
+}
+.open {
+    display: block;
+}
+
+ .dropdown-img {
+    left: 0;
+    border-radius: 10px;
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+.dropdown-content  {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 8px;
+}
+
+.dropdown-content .dropdown-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.dropdown-content .dropdown-quantity {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.dropdown-content .dropdown-price {
+    color: red;
+}
+
+.dropdown-total {
+    width: 100%;
+    border-top: 1px #686868 solid;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    color: red;
+}

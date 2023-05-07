@@ -1,0 +1,8 @@
+::selection {
+    color: white;
+    background: #636363;
+  }
+
+  .carousel-control-prev-icon {
+    color: hsl(0, 0%, 39%);
+  }

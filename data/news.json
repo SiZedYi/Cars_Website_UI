@@ -1,0 +1,37 @@
+{
+    "name":"news",
+    "data": [
+        {
+            "title": "Giá xe Honda mới nhất tháng 5/2023",
+            "img": "https://img1.oto.com.vn/crop/575x430/2023/03/01/20230301120106-6a94_wm.jpg",
+            "brand":"honda"
+        },
+        {
+            "title": "Giá xe Toyota mới nhất tháng 5/2023",
+            "img": "https://img1.oto.com.vn/crop/575x430/2023/01/12/20230112094633-5318_wm.jpg",
+            "brand":"toyota"
+        },
+        {
+            "title": "Giá xe Hyundai mới nhất tháng 5/2023",
+            "img": "https://img1.oto.com.vn/crop/575x430/2023/02/05/7b58c1d1-c732_wm.jpg",
+            "brand":"hyundai"
+        },
+        {
+            "title": "Giá xe Kia mới nhất tháng 5/2023",
+            "img": "https://img1.oto.com.vn/crop/575x430/2023/02/13/20230213101332-872a_wm.jpg",
+            "brand":"kia"
+        },
+        {
+            "title": "Giá xe Ford mới nhất tháng 5/2023",
+            "img": "https://img1.oto.com.vn/crop/575x430/2023/02/09/20230209115816-2518_wm.jpg",
+            "brand":"ford"
+        },
+        {
+            "title": "Giá xe Lexus mới nhất tháng 5/2023",
+            "img": "https://img1.oto.com.vn/crop/575x430/2023/02/27/20230227135412-a001_wm.jpg",
+            "brand":"lexus"
+
+        }
+
+    ]
+}

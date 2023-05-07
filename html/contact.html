@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+        <script src="../assets/jquery/jquery-3.6.3.js"></script>
+        <title>Liên hệ</title>
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+            $("#footer").load("./footer.html");
+        })
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+    <div class=" container contact-div">
+        <h3>
+            VUI LÒNG ĐỂ LẠI THÔNG TIN LIÊN HỆ THEO MẪU BÊN DƯỚI
+        </h3>
+        <form action=""  id="contact-form">
+            <br><label for="">CHỦ ĐỀ*</label><br>
+            <select>
+                <option value="kinhdoanh">Kinh Doanh</option>
+                <option value="doitac">Đăng ký đối tác kinh doanh</option>
+                <option value="thuviec">Liên Hệ Thử Việc</option>
+            </select><br><br>
+            <div class="form-group">
+                <label for="name">HỌ TÊN</label> <br>
+                <input name="name" type="text" id="name" placeholder="VD: Nam"> <br>
+                <span class="form-message"></span>
+            </div><br><br>
+
+            <div class="form-group">
+                <label for="email">EMAIL</label> <br>
+                <input name="email" type="text" id="email" placeholder="VD: diepvienkhongthay@gmail.com"> <br>
+                <span class="form-message"></span>
+            </div><br><br>
+
+            <div class="form-group">
+                <label for="phone">SỐ ĐIỆN THOẠI</label> <br>
+                <input name="phone" type="text" id="phone" placeholder="VD: 0376231231"> <br>
+                <span class="form-message"></span>
+            </div>
+
+            <br><label for="">TỈNH THÀNH*</label><br><br>
+            <select>
+                <option value="">THÀNH PHỐ HÀ NỘI</option>
+                <option value="">THÀNH PHỐ ĐÀ NẴNG</option>
+                <option value="">THÀNH PHỐ HỒ CHÍ MINH</option>
+            </select> <br><br>
+
+            <br><label for="">SHOWROOM*</label><br><br>
+            <select>
+                <option value="">KIA BÌNH TÂN</option>
+                <option value="">KIA GÒ VẤP</option>
+                <option value="">KIA BÌNH DƯƠNG</option>
+            </select> <br><br>
+
+            <div class="form-group">
+                <label for="desc">NỘI DUNG*</label><br>
+                <textarea name="" id="desc" cols="30" rows="7"></textarea> <br> <br>
+                <span class="form-message"></span>
+            </div>
+            <input type="checkbox" name="" id=""> TÔI XÁC NHẬN CUNG CẤP THÔNG TIN CÁ NHÂN ĐỂ LIÊN HỆ V&PT VIỆT NAM <br><br>
+            <input type="submit" value="GỬI">
+        </form>
+        </div>
+        <script type="text/javascript" src="../js/validate.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mong muốn của chúng ta
+            Validator({
+                form: '#contact-form',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#name', 'Vui lòng nhập họ tên của bạn'),
+                    Validator.isEmail('#email'),
+                    Validator.isRequired('#phone', 'Vui lòng nhập số điện thoại'),
+                    Validator.isPhone('#phone', 'Số điện thoại của bạn không đúng'),
+                    Validator.isRequired('#desc', 'Vui lòng nhập nội dung liên hệ'),
+                ],
+                onSubmit: function (contactData) {
+                    localStorage.setItem('contact', contactData);
+                    window.location.href = '/'
+                }
+            })
+        })
+        </script>
+    <footer id="footer"></footer>
+</body>
+</html>
+

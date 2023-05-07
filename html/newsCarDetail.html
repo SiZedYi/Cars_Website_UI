@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/homepage.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="stylesheet" href="../css/brand.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/newsCar.css">
+    <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/cart.js"></script>
+    <script src="../assets/jquery/jquery-3.6.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <title>Xe Mới</title>
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+            $("#footer").load("./footer.html");
+
+        })
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                <div id="news-car-detail"></div>
+            </div>
+            <div class="col-4 position-relative">
+                <div id="content-list-toc">
+                    <p class="content-list-header">
+                        Mục Lục
+                    </p>
+                </div>
+                <div class="other-car-navigate">
+                    <p class="other-car-header">
+                        Những hãng xe khác
+                    </p>
+                    <div class="row">
+                        <div class="col-4"><a href="?brand=honda">Honda</a></div>
+                        <div class="col-4"><a href="?brand=toyota">Toyota</a></div>
+                        <div class="col-4"><a href="?brand=hyundai">Hyundai</a></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-4"><a href="?brand=kia">Kia</a></div>
+                        <div class="col-4"><a href="?brand=ford">Ford</a></div>
+                        <div class="col-4"><a href="?brand=lexus">Lexus</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+        <script src="../js/newsDetail.js"></script>
+</body>
+</html>
