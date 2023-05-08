@@ -1,0 +1,10 @@
+.sitemap-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 160px;
+}
+
+.sitemap-container .sitemap-group {
+    padding: 15px 0;
+    border-top: 1px #333 solid;
+}

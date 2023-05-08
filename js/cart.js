@@ -10,7 +10,7 @@ function removeFromCart(index) {
         cart.splice(index, 1); // Xóa item trong cart
         localStorage.setItem("cartItems", JSON.stringify(cart)); // Cập nhật giỏ hàng vào local storage
         // getCart(); // Re-render lại cart
-    getCart('dropdown','/');
+    getCart('dropdown','/html/orderDetail.html');
     getCart('order-detail','/')
 }
 

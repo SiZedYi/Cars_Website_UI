@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/custom.css">
+        <link rel="stylesheet" href="../css/sitemap.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="../assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+        <script src="../assets/jquery/jquery-3.6.3.js"></script>
+        <title>Về Chúng Tôi</title>
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+            $("#footer").load("./footer.html");
+            $('.collapse.show i.lni').addClass('lni-minus')
+        })
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="sitemap-container">
+        <h1 style="margin-left: -80px;  margin-bottom: 30px;">SITEMAP</h1>
+        <div class="sitemap-group">
+            <a href="/"><h3>TRANG CHỦ</h3></a>
+        </div>
+
+        <div class="sitemap-group">
+
+            <h3 data-bs-toggle="collapse" data-bs-target="#newCars"><i class="lni lni-plus" style="font-size: 16px;"></i> Giá xe mới</h3>
+            <div class="collapse" id="newCars">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/html/newsCarDetail.html?brand=honda">Giá xe Honda 2023</a></li>
+                    <li class="list-group-item"><a href="/html/newsCarDetail.html?brand=toyota">Giá xe Toyota 2023</a></li>
+                    <li class="list-group-item"><a href="/html/newsCarDetail.html?brand=hyundai">Giá xe Hyundai 2023</a></li>
+                    <li class="list-group-item"><a href="/html/newsCarDetail.html?brand=kia">Giá xe Kia 2023</a></li>
+                    <li class="list-group-item"><a href="/html/newsCarDetail.html?brand=ford">Giá xe Ford 2023</a></li>
+                    <li class="list-group-item"><a href="/html/newsCarDetail.html?brand=lexus">Giá xe Lexus 2023</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sitemap-group">
+            <h3 data-bs-toggle="collapse" data-bs-target="#oldCars"><i class="lni lni-plus" style="font-size: 16px;"></i> Mua bán xe qua sử dụng</h3>
+            <div class="collapse" id="oldCars">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/html/productList.html?brand=toyota">Mua xe Toyota qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=honda">Mua xe Honda qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=hyundai">Mua xe Hyundai qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=kia">Mua xe Kia qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=ford">Mua xe Ford qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=mazda">Mua xe Mazda qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=mercedes">Mua xe Mercedes-Benz qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=lexus">Mua xe Lexus qua sử dụng</a></li>
+                    <li class="list-group-item"><a href="/html/productList.html?brand=bmw">Mua xe BMW qua sử dụng</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="sitemap-group">
+            <a href="/html/contact.html"><h3>LIÊN HỆ</h3></a>
+        </div>
+
+        <div class="sitemap-group">
+            <a href="/html/sitemap.html"><h3>SITEMAP</h3></a>
+        </div>
+
+        <div class="sitemap-group">
+            <a href="/html/about.html"><h3>VỀ CHÚNG TÔI</h3></a>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+</html>
