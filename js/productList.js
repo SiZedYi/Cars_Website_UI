@@ -188,7 +188,7 @@ window.addToCart= (index) => {
   };
   // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưa
   const existingProductIndex = cartItems.findIndex(item => item.title === product.title);
-  // if(cartItems.length <6) {
+  if(cartItems.length < 2) {
     if (existingProductIndex >= 0) {
       // Nếu sản phẩm đã tồn tại trong giỏ hàng, tăng số lượng lên 1
     // cartItems[existingProductIndex].quantity++;
@@ -204,8 +204,8 @@ window.addToCart= (index) => {
     // Đưa lên cart
     getCart('dropdown','/html/orderDetail.html');
     console.log(localStorage.cartItems);
-  // }
-  // else {
-  //   alert("Bạn chỉ được thêm vào giỏ hàng 6 sản phẩm cùng lúc")
-  // }
+  }
+  else {
+    window.location.reload()
+  }
 };

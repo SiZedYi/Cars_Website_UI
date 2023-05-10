@@ -30,7 +30,7 @@
           <form action="#" id="register-form">
             <h1>Đăng kí</h1>
             <div class="form-group">
-              <input name="last-name" type="text" id="name" placeholder="Tên"> <br>
+              <input name="name" type="text" id="name" placeholder="Tên"> <br>
               <span class="form-message"></span>
           </div>
 
@@ -144,14 +144,15 @@
                     Validator.isRequired('#email', 'Vui lòng nhập email'),
                     Validator.isEmail('#email'),
                     Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
-                    Validator.minLength('#password', 6),
+                    Validator.minLength('#password', 8),
                     Validator.isRequired('#re-password', 'Vui lòng nhập lại mật khẩu'),
                     Validator.isConfirmed('#re-password', function () {
                         return document.querySelector('#register-form #password').value;
                     }, 'Mật khẩu nhập lại không chính xác')
                 ],
                 onSubmit: function (data) {
-                    // Call API
+                    // Set data
+                    localStorage.setItem('name', data.name);
                     localStorage.setItem('user', data.email);
                     localStorage.setItem('password', data.password);
                     localStorage.setItem('islogin', 'yes');

@@ -32,8 +32,8 @@
             VUI LÒNG ĐỂ LẠI THÔNG TIN LIÊN HỆ THEO MẪU BÊN DƯỚI
         </h3>
         <form action=""  id="contact-form">
-            <br><label for="">CHỦ ĐỀ*</label><br>
-            <select>
+            <br><label for="whychoose">CHỦ ĐỀ*</label><br>
+            <select name="whychoose" id="whychoose">
                 <option value="kinhdoanh">Kinh Doanh</option>
                 <option value="doitac">Đăng ký đối tác kinh doanh</option>
                 <option value="thuviec">Liên Hệ Thử Việc</option>
@@ -56,26 +56,26 @@
                 <span class="form-message"></span>
             </div>
 
-            <br><label for="">TỈNH THÀNH*</label><br><br>
-            <select>
-                <option value="">THÀNH PHỐ HÀ NỘI</option>
-                <option value="">THÀNH PHỐ ĐÀ NẴNG</option>
-                <option value="">THÀNH PHỐ HỒ CHÍ MINH</option>
+            <br><label for="city">TỈNH THÀNH*</label><br><br>
+            <select name="city" id="city">
+                <option value="hanoi">THÀNH PHỐ HÀ NỘI</option>
+                <option value="danang">THÀNH PHỐ ĐÀ NẴNG</option>
+                <option value="tphcm">THÀNH PHỐ HỒ CHÍ MINH</option>
             </select> <br><br>
 
-            <br><label for="">SHOWROOM*</label><br><br>
-            <select>
-                <option value="">KIA BÌNH TÂN</option>
-                <option value="">KIA GÒ VẤP</option>
-                <option value="">KIA BÌNH DƯƠNG</option>
+            <br><label for="showroom">SHOWROOM*</label><br><br>
+            <select name="showroom" id="showroom">
+                <option value="binhtan">V&PT BÌNH TÂN</option>
+                <option value="govap">V&PT GÒ VẤP</option>
+                <option value="binhduong">V&PT BÌNH DƯƠNG</option>
             </select> <br><br>
 
             <div class="form-group">
                 <label for="desc">NỘI DUNG*</label><br>
-                <textarea name="" id="desc" cols="30" rows="7"></textarea> <br> <br>
+                <textarea name="desc" id="desc" cols="30" rows="7"></textarea> <br> <br>
                 <span class="form-message"></span>
             </div>
-            <input type="checkbox" name="" id=""> TÔI XÁC NHẬN CUNG CẤP THÔNG TIN CÁ NHÂN ĐỂ LIÊN HỆ V&PT VIỆT NAM <br><br>
+            <input type="checkbox" name="provide" id="provide"> TÔI XÁC NHẬN CUNG CẤP THÔNG TIN CÁ NHÂN ĐỂ LIÊN HỆ V&PT VIỆT NAM <br><br>
             <input type="submit" value="GỬI">
         </form>
         </div>
@@ -95,7 +95,7 @@
                     Validator.isRequired('#desc', 'Vui lòng nhập nội dung liên hệ'),
                 ],
                 onSubmit: function (contactData) {
-                    localStorage.setItem('contact', contactData);
+                    localStorage.setItem('contact', JSON.stringify(contactData));
                     window.location.href = '/'
                 }
             })

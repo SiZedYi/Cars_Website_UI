@@ -157,6 +157,18 @@ Validator.isEmail = function (selector, message) {
     };
 }
 
+Validator.isBeforeTime = function (selector, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            const inputDate = new Date(value)
+            const currentDate = new Date()
+            console.log(inputDate);
+            return inputDate >= currentDate ? undefined : message || 'Phải sau ngày hiện tại';
+        }
+    };
+}
+
 Validator.isPhone = function (selector, message) {
     return {
         selector: selector,

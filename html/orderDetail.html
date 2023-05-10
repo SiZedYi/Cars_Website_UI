@@ -34,7 +34,7 @@
         <h3 style="text-align: center;">ĐƠN HÀNG</h3>
         <div class="row" style="margin-top: 20px;">
             <div class="col-6 order-detail-left">
-                <form action=""  id="order-form">
+                <form action="#"  id="order-form">
                     <div class="form-group">
                         <label for="name">HỌ TÊN</label> <br>
                         <input name="name" type="text" id="name" placeholder="VD: Nam"> <br>
@@ -53,12 +53,14 @@
                         <span class="form-message"></span>
                     </div>
 
-                    <br><label for="">TỈNH THÀNH</label><br>
-                    <select>
-                        <option value="">THÀNH PHỐ HÀ NỘI</option>
-                        <option value="">THÀNH PHỐ ĐÀ NẴNG</option>
-                        <option value="">THÀNH PHỐ HỒ CHÍ MINH</option>
-                    </select> <br><br>
+                    <div class="form-group">
+                        <br><label for="">TỈNH THÀNH</label><br>
+                        <select>
+                            <option value="">THÀNH PHỐ HÀ NỘI</option>
+                            <option value="">THÀNH PHỐ ĐÀ NẴNG</option>
+                            <option value="">THÀNH PHỐ HỒ CHÍ MINH</option>
+                        </select> <br><br>
+                    </div>
 
                     <div class="form-group">
                         <label for="time">ĐẶT LỊCH HẸN</label><br>
@@ -78,7 +80,31 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="../js/validate.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Mong muốn của chúng ta
+        Validator({
+            form: '#order-form',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#name', 'Vui lòng nhập họ tên của bạn'),
+                Validator.isEmail('#email', 'Trường này phải là email'),
+                Validator.isRequired('#phone', 'Vui lòng nhập số điện thoại'),
+                Validator.isPhone('#phone', 'Số điện thoại của bạn không đúng'),
+                Validator.isBeforeTime('#time', 'Phải sau ngày hiện tại'),
+            ],
+            onSubmit: function (orderData) {
+                const cartItems = JSON.parse(localStorage.getItem('cartItems'))
+                orderData.cartItems = cartItems
+                localStorage.setItem('order', JSON.stringify(orderData));
+                localStorage.removeItem('cartItems');
+                window.location.href = '/';
+            }
+        })
+    })
+    </script>
     <footer id="footer"></footer>
 </body>
 </html>

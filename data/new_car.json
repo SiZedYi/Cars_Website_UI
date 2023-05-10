@@ -10,7 +10,7 @@
         },
         {
             "id":2,
-            "link": 1,
+            "link": "/html/newsCarDetail.html?brand=lexus&id=gi-xe-lexus-lx-2023",
             "brand": "MITSUBISHI",
             "name":"Pajero Sport",
             "img":"../assets/imgs/spotlight/pajero.png"
@@ -34,38 +34,141 @@
     [
         {
             "id":1,
-            "link": 2,
+            "link": "/html/newsCarDetail.html?brand=toyota#gi-xe-toyota-vios-2023",
             "brand": "TOYOTA",
             "name":"Vios",
             "img":"../assets/imgs/spotlight/vios.png"
         },
         {
             "id":2,
-            "link": 2,
+            "link": "/html/newsCarDetail.html?brand=toyota#gi-xe-toyota-camry-2023",
             "brand": "TOYOTA",
             "name":"Camry",
             "img":"../assets/imgs/spotlight/camry.png"
         },
         {
             "id":3,
-            "link": 2,
+            "link": "/html/newsCarDetail.html?brand=honda#gi-xe-honda-civic-type-r-2023",
             "brand": "HONDA",
             "name":"Civic",
             "img":"../assets/imgs/spotlight/civic.png"
         },
         {
             "id":4,
-            "link": 2,
+            "link": "/html/newsCarDetail.html?brand=hyundai#gi-xe-hyundai-accent-2023",
             "brand": "HUYNDAI",
             "name":"Accent",
             "img":"../assets/imgs/spotlight/accent.png"
         },
         {
             "id":5,
-            "link": 2,
+            "link": "/html/newsCarDetail.html?brand=honda#gi-xe-honda-civic-type-r-2023",
             "brand": "MAZDA",
             "name":"3",
             "img":"../assets/imgs/spotlight/mazda3_sedan.png"
+        }
+    ],
+    "mpv":
+    [
+        {
+            "id":1,
+            "link": "/html/newsCarDetail.html?brand=lexus#gi-xe-lexus-lm-350-2023",
+            "brand": "LEXUS",
+            "name":"LM350",
+            "img":"../assets/imgs/spotlight/lm350.jpg"
+        },
+        {
+            "id":2,
+            "link": "/html/newsCarDetail.html?brand=toyota#gi-xe-toyota-innova-2023",
+            "brand": "TOYOTA",
+            "name":"Innova",
+            "img":"../assets/imgs/spotlight/innova.png"
+        }
+    ],
+    "cuv":
+    [
+        {
+            "id":1,
+            "link": "/html/newsCarDetail.html?brand=lexus&id=gi-xe-lexus-lx-2023",
+            "brand": "LEXUS",
+            "name":"LX570",
+            "img":"../assets/imgs/spotlight/lx.png"
+        },
+        {
+            "id":2,
+            "link": "/html/newsCarDetail.html?brand=ford&id=gi-xe-ford-everest-2023",
+            "brand": "MITSUBISHI",
+            "name":"Pajero Sport",
+            "img":"../assets/imgs/spotlight/pajero.png"
+        },
+        {
+            "id":3,
+            "link": "/html/newsCarDetail.html?brand=ford&id=gi-xe-ford-everest-2023",
+            "brand": "FORD",
+            "name":"Everest",
+            "img":"../assets/imgs/spotlight/everest.png"
+        },
+        {
+            "id":4,
+            "link": "/html/newsCarDetail.html?brand=toyota&id=gi-xe-toyota-land-cruiser-2023",
+            "brand": "TOYOTA",
+            "name":"Land Cruiser",
+            "img":"../assets/imgs/spotlight/land.png"
+        }
+    ],
+    "pickup":
+    [
+        {
+            "id":1,
+            "link": "/html/newsCarDetail.html?brand=toyota#gi-xe-toyota-vios-2023",
+            "brand": "TOYOTA",
+            "name":"Vios",
+            "img":"../assets/imgs/spotlight/vios.png"
+        },
+        {
+            "id":2,
+            "link": "/html/newsCarDetail.html?brand=toyota#gi-xe-toyota-camry-2023",
+            "brand": "TOYOTA",
+            "name":"Camry",
+            "img":"../assets/imgs/spotlight/camry.png"
+        },
+        {
+            "id":3,
+            "link": "/html/newsCarDetail.html?brand=honda#gi-xe-honda-civic-type-r-2023",
+            "brand": "HONDA",
+            "name":"Civic",
+            "img":"../assets/imgs/spotlight/civic.png"
+        },
+        {
+            "id":4,
+            "link": "/html/newsCarDetail.html?brand=hyundai#gi-xe-hyundai-accent-2023",
+            "brand": "HUYNDAI",
+            "name":"Accent",
+            "img":"../assets/imgs/spotlight/accent.png"
+        },
+        {
+            "id":5,
+            "link": "/html/newsCarDetail.html?brand=honda#gi-xe-honda-civic-type-r-2023",
+            "brand": "MAZDA",
+            "name":"3",
+            "img":"../assets/imgs/spotlight/mazda3_sedan.png"
+        }
+    ],
+    "hatchback":
+    [
+        {
+            "id":1,
+            "link": "/html/newsCarDetail.html?brand=lexus#gi-xe-lexus-lm-350-2023",
+            "brand": "LEXUS",
+            "name":"LM350",
+            "img":"../assets/imgs/spotlight/lm350.jpg"
+        },
+        {
+            "id":2,
+            "link": "/html/newsCarDetail.html?brand=toyota#gi-xe-toyota-innova-2023",
+            "brand": "TOYOTA",
+            "name":"Innova",
+            "img":"../assets/imgs/spotlight/innova.png"
         }
     ]
 }
